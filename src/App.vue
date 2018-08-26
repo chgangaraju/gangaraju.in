@@ -2,7 +2,7 @@
   <div class="main-wrapper">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#about">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-block d-lg-none">Gangaraju</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/profile.jpg" alt="">
         </span>
@@ -75,6 +75,30 @@
                 </span>
               </a>
             </li>
+           <li class="list-inline-item">
+              <a href="https://stackoverflow.com/users/1986826/gangaraju">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+             <li class="list-inline-item">
+              <a href="https://www.instagram.com/Im_Gangaraju">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+             <li class="list-inline-item">
+              <a href="https://plus.google.com/+GangarajuChaganti">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
@@ -107,7 +131,7 @@
               <h3 class="mb-0">B.V.Raju Institute of Computer Education</h3>
               <div class="subheading mb-3">Andhra University</div>
               <div>Master of Computer Applications</div>
-              <p>GPA: 8</p>
+              <p>GPA: 8.18</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">June 2010 - May 2013</span>
@@ -180,6 +204,7 @@
         </div>
       </section>
     </div>
+    <p id='footer'>All Rights Reserved @ Gangaraju Chaganti 2018 </p>
   </div>
 </template>
 
@@ -190,10 +215,10 @@ export default {
       title: 'Gangaraju Chaganti',
       name: 'Gangaraju',
       surname: 'Chaganti',
-      address: '[ Bhimavaram, Hyderabad, Bengaluru]',
+      address: '[ Bhimavaram, Hyderabad, Bengaluru ]',
       email: 'gangaraju.chaganti@gmail.com',
       aboutMe:
-        'I am a Fullstack Developer with over 5+ years experience in Java, AWS, Docker, Python and Angular ',
+        'Software Developer with over 5+ years experience in Java, AWS, Docker, Python and Angular',
       experience: [
         {
           position: 'Senior Software Developer',
@@ -416,5 +441,8 @@ a:hover,
 a:focus,
 a:active {
   color: #824027;
+}
+#footer {
+  text-align: center;
 }
 </style>
