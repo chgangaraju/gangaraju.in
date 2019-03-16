@@ -4,10 +4,22 @@
       <a class="navbar-brand js-scroll-trigger" href="#about">
         <span class="d-block d-lg-none">Gangaraju</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/profile.jpg" alt="">
+          <img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="./assets/profile.jpg"
+            alt
+          >
         </span>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,13 +44,14 @@
     </nav>
 
     <div class="container-fluid p-0">
-
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">{{ name }}
+          <h1 class="mb-0">
+            {{ name }}
             <span class="text-primary">{{ surname }}</span>
           </h1>
-          <div class="subheading mb-5">{{ address }}
+          <div class="subheading mb-5">
+            {{ address }}
             <a href="mailto:gangaraju.chaganti@gmail.com">{{ email }}</a>
           </div>
           <p class="mb-5">{{ aboutMe }}</p>
@@ -75,7 +88,7 @@
                 </span>
               </a>
             </li>
-           <li class="list-inline-item">
+            <li class="list-inline-item">
               <a href="https://stackoverflow.com/users/1986826/gangaraju">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -83,7 +96,7 @@
                 </span>
               </a>
             </li>
-             <li class="list-inline-item">
+            <li class="list-inline-item">
               <a href="https://www.instagram.com/Im_Gangaraju">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -91,7 +104,7 @@
                 </span>
               </a>
             </li>
-             <li class="list-inline-item">
+            <li class="list-inline-item">
               <a href="https://plus.google.com/+GangarajuChaganti">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -107,7 +120,11 @@
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5" v-for="job in experience" :key="job.description">
+          <div
+            class="resume-item d-flex flex-column flex-md-row mb-5"
+            v-for="job in experience"
+            :key="job.description"
+          >
             <div class="resume-content mr-auto">
               <h3 class="mb-0">{{ job.position }}</h3>
               <div class="subheading mb-3">{{ job.company }}</div>
@@ -117,9 +134,7 @@
               <span class="text-primary">{{ job.startDate }} - {{ job.endDate }}</span>
             </div>
           </div>
-
         </div>
-
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
@@ -147,64 +162,80 @@
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
-              <i class="devicons devicons-java"></i>
+              <i class="devicon-java-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-docker"></i>
+              <i class="devicon-docker-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-aws"></i>
+              <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-python"></i>
+              <i class="devicon-python-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-angular"></i>
+              <i class="devicon-angularjs-plain colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
+              <i class="devicon-javascript-plain colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
+              <i class="devicon-jquery-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-git"></i>
+              <i class="devicon-git-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-linux"></i>
-            </li>
-               <li class="list-inline-item">
-              <i class="devicons devicons-mysql"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-nginx"></i>
+              <i class="devicon-nginx-original-wordmark colored"></i>
             </li>
           </ul>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="achievements">
-        <div class="my-auto">
+        <div>
           <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              AWS Cerfied Solutions Architect - Associate</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              AWS Cerfied Developer - Associate</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-             Young Achiever - 2015 @Pramati Technologies </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mission R&D Course
-           </li>
-          </ul>
+          <div style="width: 50%; float:left">
+            <ul class="fa-ul mb-0">
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+                AWS Cerfied Solutions Architect - Professional
+              </li>
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+                AWS Cerfied DevOps Engineer - Professional
+              </li>
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+                AWS Cerfied Solutions Architect - Associate
+              </li>
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+                AWS Cerfied Developer - Associate
+              </li>
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+                AWS Cerfied SysOps Administrator - Associate
+              </li>
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+                Young Achiever - 2015 @Pramati Technologies
+              </li>
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+                Mission R&D Course
+              </li>
+              <br>
+              <br>
+            </ul>
+          </div>
+          <div style="width: 50%; float:right">
+            <img src="./assets/aws_certified.png" style="max-width:70%" alt="aws_certified">
+          </div>
         </div>
       </section>
     </div>
-    <p id='footer'>All Rights Reserved @ Gangaraju Chaganti 2018 </p>
+    <p id="footer">All Rights Reserved @ Gangaraju Chaganti 2019</p>
   </div>
 </template>
 
@@ -212,43 +243,43 @@
 export default {
   data() {
     return {
-      title: 'Gangaraju Chaganti',
-      name: 'Gangaraju',
-      surname: 'Chaganti',
-      address: '[ Bhimavaram, Hyderabad, Bengaluru ]',
-      email: 'gangaraju.chaganti@gmail.com',
+      title: "Gangaraju Chaganti",
+      name: "Gangaraju",
+      surname: "Chaganti",
+      address: "[ Bhimavaram, Hyderabad, Bengaluru ]",
+      email: "gangaraju.chaganti@gmail.com",
       aboutMe:
-        'Software Developer with over 5+ years experience in Java, AWS, Docker, Python and Angular',
+        "Software Developer with around 6 years experience in Java, AWS, Docker, Python, Angular, Terraform and Serverless",
       experience: [
         {
-          position: 'Senior Software Developer',
-          company: 'Syncron Services India Private Limited',
-          description: '',
-          startDate: 'April 2018',
-          endDate: 'Present',
+          position: "Senior Software Developer",
+          company: "Syncron Services India Private Limited",
+          description: "",
+          startDate: "April 2018",
+          endDate: "Present"
         },
         {
-          position: 'Software Developer',
-          company: 'Syncron Services India Private Limited',
-          description: '',
-          startDate: 'July 2016',
-          endDate: 'March 2018',
+          position: "Software Developer",
+          company: "Syncron Services India Private Limited",
+          description: "",
+          startDate: "July 2016",
+          endDate: "March 2018"
         },
         {
-          position: 'Development Engineer',
-          company: 'Wavemaker Inc',
-          description: '',
-          startDate: 'Feb 2016',
-          endDate: 'July 2016',
+          position: "Development Engineer",
+          company: "Wavemaker Inc",
+          description: "",
+          startDate: "Feb 2016",
+          endDate: "July 2016"
         },
         {
-          position: 'Development Engineer',
-          company: 'Pramati Technologies Private Limited',
-          description: '',
-          startDate: 'June 2013',
-          endDate: 'July 2016',
-        },
-      ],
+          position: "Development Engineer",
+          company: "Pramati Technologies Private Limited",
+          description: "",
+          startDate: "June 2013",
+          endDate: "July 2016"
+        }
+      ]
     };
   },
   mounted() {
@@ -257,21 +288,21 @@ export default {
       // our custom jQuery code goes here
       $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
         if (
-          location.pathname.replace(/^\//, '') ===
-            this.pathname.replace(/^\//, '') &&
+          location.pathname.replace(/^\//, "") ===
+            this.pathname.replace(/^\//, "") &&
           location.hostname === this.hostname
         ) {
           var target = $(this.hash);
           target = target.length
             ? target
-            : $('[name=' + this.hash.slice(1) + ']');
+            : $("[name=" + this.hash.slice(1) + "]");
           if (target.length) {
-            $('html, body').animate(
+            $("html, body").animate(
               {
-                scrollTop: target.offset().top,
+                scrollTop: target.offset().top
               },
               1000,
-              'easeInOutExpo',
+              "easeInOutExpo"
             );
             return false;
           }
@@ -279,170 +310,15 @@ export default {
       });
 
       // Closes responsive menu when a scroll trigger link is clicked
-      $('.js-scroll-trigger').click(function() {
-        $('.navbar-collapse').collapse('hide');
+      $(".js-scroll-trigger").click(function() {
+        $(".navbar-collapse").collapse("hide");
       });
 
       // Activate scrollspy to add active class to navbar items on scroll
-      $('body').scrollspy({
-        target: '#sideNav',
+      $("body").scrollspy({
+        target: "#sideNav"
       });
     });
-  },
+  }
 };
 </script>
-
-<style>
-body {
-  font-family: 'Open Sans', serif;
-  padding-top: 54px;
-  color: #868e96;
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 17rem;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Saira Extra Condensed', serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #343a40;
-}
-
-h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
-}
-
-h2 {
-  font-size: 3.5rem;
-}
-
-.subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
-  font-size: 1.35rem;
-}
-
-.list-social-icons a {
-  color: #495057;
-}
-
-.list-social-icons a:hover {
-  color: #bd5d38;
-}
-
-.list-social-icons a .fa-lg {
-  font-size: 1.75rem;
-}
-
-.list-icons {
-  font-size: 3rem;
-}
-
-.list-icons .list-inline-item i:hover {
-  color: #bd5d38;
-}
-
-#sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-@media (min-width: 992px) {
-  #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    width: 17rem;
-    height: 100vh;
-  }
-  #sideNav .navbar-brand {
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-  }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  }
-  #sideNav .navbar-collapse {
-    display: flex;
-    align-items: flex-start;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto;
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    display: block;
-  }
-}
-
-section.resume-section {
-  border-bottom: 1px solid #dee2e6;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-}
-
-section.resume-section .resume-item .resume-date {
-  min-width: none;
-}
-
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-.bg-primary {
-  background-color: #bd5d38 !important;
-}
-
-.text-primary {
-  color: #bd5d38 !important;
-}
-
-a {
-  color: #bd5d38;
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: #824027;
-}
-#footer {
-  text-align: center;
-}
-</style>
